@@ -1,27 +1,26 @@
 language: php
 
-php: 
+php:
   - 5.3
- # - 5.4
-  #- 5.5
-  #- 5.6
-  
-before_script: 
-  - mkdir -p shippable/codecoverage
-  - mkdir -p shippable/testresults
 
-script:
-   - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
+build:
+  pre-ci:
+    - mkdir -p shippable/codecoverage
+    - mkdir -p shippable/testresults
+
+  ci:
+    - pwd
+    - phpunit --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage tests/calculator_test.php
 
 after_success:
   - echo "success"
-  
+  - ls shippable/codecoverage/ && cat shippable/codecoverage/*
+
 after_failure:
   - echo "failure"
-  
+
 notifications:
-  email: 
-    varsha@shippable.com
-  irc: "chat.freenode.net#test-irc"
-    
-archive: true  
+  - integration-name: email
+    integration-type: email
+    recepients:
+      - email-test@mailinator.com
