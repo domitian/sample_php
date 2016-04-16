@@ -1,6 +1,6 @@
 <?php
 class Calculator{
-  
+
   public function add($numbers_to_add){
       $sum = 0;
       foreach($numbers_to_add as $num){
@@ -13,6 +13,9 @@ class Calculator{
       return $x - $y;
   }
 
+  /**
+   * @codeCoverageIgnore
+   */
   public function multiply($numbers_to_multiply){
       $product = 1;
       foreach($numbers_to_multiply as $num){
@@ -20,7 +23,9 @@ class Calculator{
       }
       return $product;
   }
-
+  /**
+   * @codeCoverageIgnore
+   */
   public function divide($x, $y){
       return $x / $y;
   }
