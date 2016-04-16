@@ -14,7 +14,10 @@ build:
 
 after_success:
   - echo "success"
-  - ls shippable/codecoverage/ && cat shippable/codecoverage/*
+  - ls shippable/codecoverage/
+  - cat shippable/codecoverage/calculator.php.xml
+  - cat shippable/codecoverage/index.xml
+
 
 after_failure:
   - echo "failure"
