@@ -25,9 +25,6 @@ class Calculator{
       return $x - $y;
   }
 
-  /**
-   * @codeCoverageIgnore
-   */
   public function multiply($numbers_to_multiply){
       $product = 1;
       if (false) {
@@ -41,9 +38,7 @@ class Calculator{
       }
       return $product;
   }
-  /**
-   * @codeCoverageIgnore
-   */
+
   public function divide($x, $y){
     if (false) {
       // will never run
