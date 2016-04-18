@@ -16,7 +16,7 @@ after_success:
   - echo "success"
   - ls shippable/codecoverage/
   - cat shippable/codecoverage/calculator.php.xml
-  - cat shippable/codecoverage/index.xml
+  - cat shippable/codecoverage/calculator2.php.xml
 
 
 after_failure:
