@@ -17,7 +17,12 @@
     </testsuites>
     <filter>
       <whitelist processUncoveredFilesFromWhitelist="true">
-        <directory suffix=".php">/root/src/github.com/harryi3t/sample_php/</directory>
+        <file>/root/src/github.com/harryguakei3t/sample_php/calculator.php</file>
       </whitelist>
+      <testsuites>
+        <testsuite name="BLABLA">
+            <exclude>/root/src/github.com/harryguakei3t/sample_php/calculator2.php</exclude>
+        </testsuite>
+      </testsuites>
     </filter>
 </phpunit>
