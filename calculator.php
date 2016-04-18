@@ -38,7 +38,7 @@ class Calculator{
       }
       return $product;
   }
-
+  
   public function divide($x, $y){
     if (false) {
       // will never run

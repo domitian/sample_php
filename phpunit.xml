@@ -19,5 +19,8 @@
       <whitelist processUncoveredFilesFromWhitelist="true">
         <directory suffix=".php">/root/src/github.com/harryi3t/sample_php/</directory>
       </whitelist>
+      <exclude>
+        <file>/root/src/github.com/harryi3t/sample_php/calculator2.php</file>
+      </exclude>
     </filter>
 </phpunit>

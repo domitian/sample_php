@@ -1,7 +1,4 @@
 <?php
-/**
- * @codeCoverageIgnore
- */
 class Calculator2{
 
   public function add($numbers_to_add){
