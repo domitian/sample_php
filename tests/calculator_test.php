@@ -24,11 +24,5 @@ class CalculatorTest extends PHPUnit_Framework_TestCase{
       $this->assertEquals(5, $result); //check if 5 - 2 is equal to 3
   }
 
-  // testing Calculator2
-  public function testAdd2(){
-      $calc = new Calculator2();
-      $sum = $calc->add(array(2,3,4,5));
-      $this->assertEquals(14, $sum); //check if 2+3+4+5 is equal to 14
-  }
 }
 ?>
