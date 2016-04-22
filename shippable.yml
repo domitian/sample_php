@@ -17,6 +17,7 @@ after_success:
   - ls shippable/codecoverage/
   - cat shippable/codecoverage/calculator.php.xml
   - cat shippable/codecoverage/calculator2.php.xml
+  - sleep 10000
 
 
 after_failure:

@@ -20,7 +20,7 @@
         <directory suffix=".php">/root/src/github.com/domitian/sample_php/</directory>
       </whitelist>
       <exclude>
-        <file>/root/src/github.com/harryi3t/domitian/calculator2.php</file>
+        <file>/root/src/github.com/domitian/sample_php/calculator2.php</file>
       </exclude>
     </filter>
 </phpunit>
