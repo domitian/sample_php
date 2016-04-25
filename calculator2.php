@@ -1,8 +1,5 @@
 <?php
 
-/**
-* @codeCoverageIgnore
-*/
 class Calculator2{
 
   public function divide($x, $y){
