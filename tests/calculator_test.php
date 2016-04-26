@@ -24,5 +24,11 @@ class CalculatorTest extends PHPUnit_Framework_TestCase{
       $this->assertEquals(5, $result); //check if 5 - 2 is equal to 3
   }
 
+  public function testDivide2(){
+      $calc = new Calculator2();
+      $result = $calc->divide(10,2);
+      $this->assertEquals(5, $result); //check if 5 - 2 is equal to 3
+  }
+
 }
 ?>
