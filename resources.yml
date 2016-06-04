@@ -1,0 +1,19 @@
+resources:
+- name: apiGit
+  type: gitRepo
+  integration: avinci-scm
+  source:
+    name : "Shippable/api"
+    branch: master
+- name: apiImage
+  type: image
+  integration: avinci-DH
+  source:
+    name : "shipimg/api"
+    isPull: false
+- name: aws-beta
+  type: aws
+  integration: avinci-aws
+  source:
+    name : "clusterName"
+    region: "us-east-1"
